@@ -33,6 +33,17 @@ public class DoorButtons : MonoBehaviour {
                     anim.SetInteger("State", 0);
                 }
             }
+
+            if (hit.collider.CompareTag("LightButton"))
+            {
+                test++;
+                Debug.Log("ButtonHit" + test);
+                if (hit.collider.GetComponentInChildren<Light>().intensity == 100)
+                {
+                    hit.collider.GetComponentInChildren<Light>().intensity = 0;
+                }
+                else hit.collider.GetComponentInChildren<Light>().intensity = 100;
+            }
         }
     }
 }
