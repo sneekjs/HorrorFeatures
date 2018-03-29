@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33511824845154830}
   - component: {fileID: 23925269855353814}
   - component: {fileID: 114176824936432432}
+  - component: {fileID: 136206108005075252}
   m_Layer: 0
   m_Name: SlenderMan
   m_TagString: Untagged
@@ -94,7 +95,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3b399a51dd78f647b567855e1055443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  staticVideo: {fileID: 0}
   isVisible: 0
   test: 0
   damping: 100
-  speed: 3
+  speed: 5
+--- !u!136 &136206108005075252
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1397988244729370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.5
+  m_Height: 16.88
+  m_Direction: 1
+  m_Center: {x: -0.00000095367426, y: 8.112399, z: 0.72029144}
