@@ -44,7 +44,7 @@ public class SlenderScript : MonoBehaviour {
             staticVideo.gameObject.SetActive(false);
 
 
-            Debug.Log("InVisible");
+
             playerDir = target.transform.position - transform.position;
             playerDir.y = 0;
             rot = Quaternion.LookRotation(playerDir);
