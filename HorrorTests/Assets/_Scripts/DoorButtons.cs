@@ -21,8 +21,6 @@ public class DoorButtons : MonoBehaviour {
         {
             if (hit.collider.CompareTag("DoorButton"))
             {
-                test++;
-                Debug.Log("ButtonHit" + test);
                 parent = hit.transform.parent.gameObject;
                 anim = parent.transform.GetComponentInChildren<Animator>();
                 if (anim.GetInteger("State") == 0)
@@ -36,8 +34,6 @@ public class DoorButtons : MonoBehaviour {
 
             if (hit.collider.CompareTag("LightButton"))
             {
-                test++;
-                Debug.Log("ButtonHit" + test);
                 if (hit.collider.GetComponentInChildren<Light>().intensity == 100)
                 {
                     hit.collider.GetComponentInChildren<Light>().intensity = 0;
